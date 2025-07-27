@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c71b9c63fdc1cbc431f9d3282e741491 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c71b9c63fdc1cbc431f9d3282e741491" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c71b9c63fdc1cbc431f9d3282e741491 = L.map(
+                "map_c71b9c63fdc1cbc431f9d3282e741491",
+                {
+                    center: [15.475106304173572, 104.1513587677517],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c71b9c63fdc1cbc431f9d3282e741491);
+
+            
+
+        
+    
+            var tile_layer_2076f2271a28bc7ca99e574af99b88f6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c71b9c63fdc1cbc431f9d3282e741491);
+        
+    
+            var marker_21b65eb23fd59ee5d373e85afed7db20 = L.marker(
+                [15.475106304173572, 104.1513587677517],
+                {}
+            ).addTo(map_c71b9c63fdc1cbc431f9d3282e741491);
+        
+    
+            var icon_37106b8881f4ff53b287526bb6cce76c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_21b65eb23fd59ee5d373e85afed7db20.setIcon(icon_37106b8881f4ff53b287526bb6cce76c);
+        
+    
+        var popup_ca23d872c6d218f47381363d07c246d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_203d778109f69c7e8ca26c47a0fedf07 = $(`<div id="html_203d778109f69c7e8ca26c47a0fedf07" style="width: 100.0%; height: 100.0%;">ตำบลโจดม่วง, อ.ศิลาลาด, จ.ศรีสะเกษ</div>`)[0];
+            popup_ca23d872c6d218f47381363d07c246d7.setContent(html_203d778109f69c7e8ca26c47a0fedf07);
+        
+
+        marker_21b65eb23fd59ee5d373e85afed7db20.bindPopup(popup_ca23d872c6d218f47381363d07c246d7)
+        ;
+
+        
+    
+    
+            marker_21b65eb23fd59ee5d373e85afed7db20.bindTooltip(
+                `<div>
+                     จุดศูนย์กลาง
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_073ad77d44a20ccc86c90eca32c311e5 = L.circle(
+                [15.475106304173572, 104.1513587677517],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 70000, "stroke": true, "weight": 3}
+            ).addTo(map_c71b9c63fdc1cbc431f9d3282e741491);
+        
+    
+        var popup_816594f366720694f846de5f1ba2ffa1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a7c178575c31e8297ca9c93c3b9c748 = $(`<div id="html_0a7c178575c31e8297ca9c93c3b9c748" style="width: 100.0%; height: 100.0%;">รัศมี 70 กม.</div>`)[0];
+            popup_816594f366720694f846de5f1ba2ffa1.setContent(html_0a7c178575c31e8297ca9c93c3b9c748);
+        
+
+        circle_073ad77d44a20ccc86c90eca32c311e5.bindPopup(popup_816594f366720694f846de5f1ba2ffa1)
+        ;
+
+        
+    
+    
+            var circle_d606fb20b8a812d527aff3856654331e = L.circle(
+                [15.475106304173572, 104.1513587677517],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 130000, "stroke": true, "weight": 3}
+            ).addTo(map_c71b9c63fdc1cbc431f9d3282e741491);
+        
+    
+        var popup_e4980560d8eb8993764cce9a68531b28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a432709fc8bf8087250dad2575feb37f = $(`<div id="html_a432709fc8bf8087250dad2575feb37f" style="width: 100.0%; height: 100.0%;">รัศมี 130 กม.</div>`)[0];
+            popup_e4980560d8eb8993764cce9a68531b28.setContent(html_a432709fc8bf8087250dad2575feb37f);
+        
+
+        circle_d606fb20b8a812d527aff3856654331e.bindPopup(popup_e4980560d8eb8993764cce9a68531b28)
+        ;
+
+        
+    
+    
+            var circle_99fc183361c4b31d4ca1e34c850d2a65 = L.circle(
+                [15.475106304173572, 104.1513587677517],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 160000, "stroke": true, "weight": 3}
+            ).addTo(map_c71b9c63fdc1cbc431f9d3282e741491);
+        
+    
+        var popup_7a76873421aae5e60a6ef26010751283 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03d5c4ab37ed8859119f002b8a8cfa80 = $(`<div id="html_03d5c4ab37ed8859119f002b8a8cfa80" style="width: 100.0%; height: 100.0%;">รัศมี 160 กม.</div>`)[0];
+            popup_7a76873421aae5e60a6ef26010751283.setContent(html_03d5c4ab37ed8859119f002b8a8cfa80);
+        
+
+        circle_99fc183361c4b31d4ca1e34c850d2a65.bindPopup(popup_7a76873421aae5e60a6ef26010751283)
+        ;
+
+        
+    
+    
+            var measure_control_9b116be2b5b57d91558ee242f72d5b3d = new L.Control.Measure(
+                {"position": "topright", "primaryAreaUnit": "sqmeters", "primaryLengthUnit": "kilometers", "secondaryAreaUnit": "acres", "secondaryLengthUnit": "miles"});
+            map_c71b9c63fdc1cbc431f9d3282e741491.addControl(measure_control_9b116be2b5b57d91558ee242f72d5b3d);
+
+        
+</script>
+</html>
